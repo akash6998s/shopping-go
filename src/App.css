@@ -1,0 +1,114 @@
+/* Home Component */
+.home {
+  display: flex;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.productContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+} 
+
+/* Cart Styles */
+.cartContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px; /* Padding around the cart */
+}
+
+.cartItem {
+  display: flex; /* Flexbox for alignment */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center align items vertically */
+  padding: 15px; /* Padding inside each cart item */
+  border: 1px solid #dee2e6; /* Border around cart item */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #ffffff; /* White background */
+  margin-bottom: 10px; /* Space between cart items */
+  transition: box-shadow 0.2s; /* Smooth transition for hover effect */
+}
+
+.cartItem:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Hover shadow effect */
+}
+
+.cartItem img {
+  width: 60px; /* Increased image size */
+  height: 60px;
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 5px; /* Rounded image */
+}
+
+.cartItemDetail {
+  display: flex;
+  flex-direction: column; /* Stack item details vertically */
+  padding-left: 10px; /* Space between image and text */
+}
+
+.cartItemDetail span:first-child {
+  font-weight: 600; /* Emphasize product name */
+  font-size: 1.1rem; /* Slightly larger font */
+}
+
+.cartItemDetail span:last-child {
+  color: #6c757d; /* Price color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .cartItem {
+    flex-direction: column; /* Stack items on small screens */
+    align-items: flex-start; /* Align to the start */
+  }
+
+  .cartItem img {
+    margin-bottom: 10px; /* Space below image */
+  }
+}
+
+
+/* .productContainer {
+  display: flex;
+  width: 78%;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+} */
+/* Filters Component */
+.filters {
+  width: 250px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.filters .title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Cart Component */
+.summary {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.summary .title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.cartItemImg {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+}
